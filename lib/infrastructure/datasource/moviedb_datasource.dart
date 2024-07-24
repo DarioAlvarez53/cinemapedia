@@ -33,7 +33,7 @@ class MoviedbDatasource extends MoviesDatasources {
     .where((moviedb) => moviedb.posterPath != 'no-poster')
     .map(
       (moviedb) => MovieMapper.movieDBToEntity(moviedb)
-    ).toList();
+    ).toList(); 
 
     return movies;
   }
