@@ -37,14 +37,20 @@ class _HomeViewState extends ConsumerState<_HomeView> {
   @override
   Widget build(BuildContext context) {
 
-    // final nowPlayingMovies = ref.watch(nowPlayingMoviesProvider);
+    final nowPlayingMovies = ref.watch(nowPlayingMoviesProvider);
     final moviesSlideShow = ref.watch(moviesSlideShowProvider);
 
     return Column(
       children: [
         const CustomAppbar(),
         
-        MoviesSlideShow(movies: moviesSlideShow)
+        MoviesSlideShow(movies: moviesSlideShow),
+
+        MoviesHorizontalListView(
+          movie: nowPlayingMovies,
+          title: 'En cines',
+          subTitle: 'Lunes 20',
+        )
       ],
     );
   }
