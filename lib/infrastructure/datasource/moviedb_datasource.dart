@@ -3,7 +3,7 @@
 import 'package:cinemapedia/infrastructure/mappers/movie_mapper.dart';
 import 'package:cinemapedia/infrastructure/models/movieDb/movie_db_response.dart';
 import 'package:dio/dio.dart';
-import 'package:cinemapedia/constants/env.dart';
+import 'package:cinemapedia/config/constants/env.dart';
 import 'package:cinemapedia/domain/datasources/movies_datasources.dart';
 import 'package:cinemapedia/domain/entities/movie.dart';
 
